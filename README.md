@@ -1,8 +1,7 @@
 # Lightning Alerts
 
-Author: Jessi Velazquez, June 2023
+Author: Jessi Velazquez
 
-[Link to Github Repository](https://github.com/JessiVelazquez/LightningAlerts)
 ## About the Program
 
 This program reads lightning event data as a stream (using Node.js's [Readline Interface Module](https://nodejs.org/api/readline.html#readlinecreateinterfaceoptions)) from standard input (one lightning strike per line as a JSON object), and matches that data against a set of assets (also in JSON format). When there are lightning strikes in the vicinity of an asset, the program sends an alert in the following format:
