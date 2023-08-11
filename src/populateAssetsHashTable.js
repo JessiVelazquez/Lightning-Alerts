@@ -7,6 +7,7 @@ const assetsHashTable = {};
  */
 const populateAssetsHashTable = (assets) => {
   assets.forEach((asset) => {
+    // if the quadKey is not in the hash table, add it and set its value to an empty array
     assetsHashTable[asset.quadKey] = assetsHashTable[asset.quadKey] || [];
     assetsHashTable[asset.quadKey].push(asset);
   });
